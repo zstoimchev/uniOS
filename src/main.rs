@@ -1,3 +1,3 @@
 fn main() {
-    println!("Hello, world!");
+    println!("uniOS Initialization Complete! Hello from the installer ENV");
 }
