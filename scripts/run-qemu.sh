@@ -23,4 +23,4 @@ echo "Kernel:    $KERNEL"
 echo "Initramfs: $INITRAMFS"
 echo
 
-exec qemu-system-x86_64 -m 512M -kernel "$KERNEL" -initrd "$INITRAMFS" -append "console=ttyS0" -nographic
+exec qemu-system-x86_64 -m 512M -kernel "$KERNEL" -initrd "$INITRAMFS" -append "console=ttyS0" -nic user,model=virtio-net-pci -nographic
